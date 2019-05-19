@@ -1,0 +1,16 @@
+.change-language {
+    text-align: right;
+    margin-right: 1rem;
+    font-size: 0.8rem;
+}
+
+.change-language a {
+    color: #999;
+    cursor: pointer;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+
+.change-language a.active, .change-language a:active, .change-language a:hover {
+    color: #222;
+}

@@ -1,36 +1,46 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { connect } from 'react-redux';
+import { IntlProvider } from 'react-intl';
 import HandleError from './components/HandleError';
 import PreHomeSaveMoney from './components/pages/PreHomeSaveMoney';
 import PreHomeOption from './components/pages/PreHomeOption';
-import Page from './components/pages/Page';
+import Contact from './components/pages/Contact';
 import Home from './components/Home';
-import './components/styles/AppLayout.css';
+import messages from './lang';
 
 const preHomes = {
-  0: PreHomeSaveMoney,
-  1: PreHomeOption,
-  2: PreHomeSaveMoney
+    0: PreHomeSaveMoney,
+    1: PreHomeOption,
+    2: PreHomeSaveMoney
 }
 
 const randomCover = Math.floor(Math.random() * 3);
 
-class App extends React.Component {
-  render() {
-    return (
-      <Router basename="/">
-
-        <HandleError>
-          <Switch>
-            <Route exact path="/" component={preHomes[randomCover]} />
-            <Route path="/inicio" render={(props) => <Home />} />
-            {/* <Route exact path="/contacto" component={Contact} /> */}
-            {/* <Route exact path="/politica-de-cookies" component={CookiesPolicy} /> */}
-          </Switch>
-        </HandleError>
-      </Router>
-    );
-  }
+class App extends Component {
+    state = {}
+    render() {
+        return (
+            <HandleError>
+                <IntlProvider locale={this.props.lang} messages={messages[this.props.lang]}>
+                    <Router basename="/">
+                        <Switch>
+                            <Route exact path="/" component={preHomes[randomCover]} />
+                            <Route path="/inicio" render={(props) => <Home />} />
+                            <Route exact path="/contacto" component={Contact} />
+                            {/* <Route exact path="/politica-de-cookies" component={CookiesPolicy} /> */}
+                        </Switch>
+                    </Router>
+                </IntlProvider>
+            </HandleError>
+        );
+    }
 }
 
-export default App;
+function mapStateToProps(state, props) {
+    return {
+        lang: state.locale.lang
+    }
+}
+
+export default connect(mapStateToProps)(App);

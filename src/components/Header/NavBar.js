@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import DrawerToggleButton from './DrawerToggleButton';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './styles/NavBar.css';
+import { FormattedMessage } from 'react-intl';
 import Logo from './../../assets/images/logo.png';
+import { connect } from 'react-redux';
+import './styles/NavBar.css';
 
 class NavBar extends React.Component {
     state = { isTop: true }
@@ -21,10 +22,26 @@ class NavBar extends React.Component {
                         <div className="row">
                             <div className="col-5 d-none d-lg-block d-xl-block">
                                 <ul className="Menu">
-                                    <li className="MenuItem"><Link to="/">Inicio</Link></li>
-                                    <li className="MenuItem"><Link to="/">Servicios</Link></li>
-                                    <li className="MenuItem"><Link to="/">Nosotros</Link></li>
-                                    <li className="MenuItem"><Link to="/">Contacto</Link></li>
+                                    <li className="MenuItem">
+                                        <Link to="/inicio">
+                                            <FormattedMessage locale={this.props.lang} id="nav.home" />
+                                        </Link>
+                                    </li>
+                                    <li className="MenuItem">
+                                        <Link to="/servicios">
+                                            <FormattedMessage locale={this.props.lang} id="nav.service" />
+                                        </Link>
+                                    </li>
+                                    <li className="MenuItem">
+                                        <Link to="/nosotros">
+                                            <FormattedMessage locale={this.props.lang} id="nav.about" />
+                                        </Link>
+                                    </li>
+                                    <li className="MenuItem">
+                                        <Link to="/contacto">
+                                            <FormattedMessage locale={this.props.lang} id="nav.contact" />
+                                        </Link>
+                                    </li>
                                 </ul>
                             </div>
                             <div className="NavBarBtnMenu col-lg-1 col-4 d-lg-none d-xl-none">
@@ -48,4 +65,4 @@ class NavBar extends React.Component {
     }
 }
 
-export default NavBar;
+export default connect()(NavBar);

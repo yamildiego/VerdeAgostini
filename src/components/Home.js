@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Page from './pages/Page';
 import OurServices from './OurServices';
+import ChangeLanguage from './ChangeLanguage';
 import './styles/Home.css';
 // import Slider from "react-slick";
 // import ImageOne from './../assets/images/2264.jpg';
@@ -25,6 +26,7 @@ class Home extends Component {
                     <div className="container-fluid">
                         <div className="row">
                             <div className="col-12 p-0">
+                                <ChangeLanguage />
                                 <div style={{ position: 'relative' }}>
                                     <div className="HomeBg"></div>
                                     <p className="HomePhrase">

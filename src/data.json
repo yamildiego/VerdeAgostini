@@ -1,0 +1,66 @@
+{
+    "es": {
+        "services": [
+            {
+                "id": "1",
+                "title": "Termotanques",
+                "subtitle": "Asesoramiento e instalaciones",
+                "image": "./../assets/images/termotanque.jpg",
+                "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, provident? Eius asperiores in itaque mollitia qui accusantium distinctio a dolores est."
+            },
+            {
+                "id": "2",
+                "title": "Luminarias led",
+                "subtitle": "Expertos en campos de juego",
+                "image": "./../assets/images/5285.jpg",
+                "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, provident? Eius asperiores in itaque mollitia qui accusantium distinctio a dolores est."
+            },
+            {
+                "id": "3",
+                "title": "Piscinas",
+                "subtitle": "Climatización solar",
+                "image": "./../assets/images/piscinas.jpg",
+                "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, provident? Eius asperiores in itaque mollitia qui accusantium distinctio a dolores est."
+            },
+            {
+                "id": "4",
+                "title": "Paneles solares",
+                "subtitle": "Servicio de instalacion",
+                "image": "./../assets/images/paneles.jpg",
+                "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, provident? Eius asperiores in itaque mollitia qui accusantium distinctio a dolores est."
+            }
+        ]
+    },
+    "en": {
+        "services": [
+            {
+                "id": "1",
+                "title": "TermotanquesENINGLES",
+                "subtitle": "ENINGLESAsesoramiento e instalaciones",
+                "image": "./../assets/images/termotanque.jpg",
+                "description": "ENINGLESLorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, provident? Eius asperiores in itaque mollitia qui accusantium distinctio a dolores est."
+            },
+            {
+                "id": "2",
+                "title": "Luminarias ledENINGLES",
+                "subtitle": "ENINGLESExpertos en campos de juego",
+                "image": "./../assets/images/5285.jpg",
+                "description": "ENINGLESLorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, provident? Eius asperiores in itaque mollitia qui accusantium distinctio a dolores est."
+            },
+            {
+                "id": "3",
+                "title": "PiscinasENINGLES",
+                "subtitle": "ENINGLESClimatización solar",
+                "image": "./../assets/images/piscinas.jpg",
+                "description": "ENINGLESLorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, provident? Eius asperiores in itaque mollitia qui accusantium distinctio a dolores est."
+            },
+            {
+                "id": "4",
+                "title": "Paneles solaresENINGLES",
+                "subtitle": "ENINGLESServicio de instalacion",
+                "image": "./../assets/images/paneles.jpg",
+                "description": "ENINGLESLorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, provident? Eius asperiores in itaque mollitia qui accusantium distinctio a dolores est."
+            }
+        ]
+    }
+}
