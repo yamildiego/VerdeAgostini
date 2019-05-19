@@ -1,4 +1,4 @@
-.side-drawer {
+.SideDrawer {
     height: 100%;
     background: white;
     box-shadow: 1px 0 7px rgba(0, 0, 0, 0.5);
@@ -12,11 +12,11 @@
     transition: transform 0.3s ease-out;
 }
 
-.side-drawer.open {
+.SideDrawer.SideDrawerOpen {
     transform: translateX(0);
 }
 
-.side-drawer ul {
+.SideDrawer ul {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -24,18 +24,18 @@
     height: 100%;
 }
 
-.side-drawer li {
+.SideDrawer li {
     margin: 0.5rem 0;
 }
 
-.side-drawer a {
+.SideDrawer a {
     font-family: 'SprayPaint';
     color: #666;
     text-decoration: none;
     font-size: 1.2rem;
 }
 
-.side-drawer a:hover, .side-drawer a:active {
+.SideDrawer a:hover, .SideDrawer a:active {
     color: #104c5a;
 }
 

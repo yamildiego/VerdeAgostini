@@ -1,0 +1,29 @@
+.PreHomeOption {
+    position: fixed;
+    background: url('./../../../assets/images/renovable.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding: 3rem;
+}
+
+.PreHomeOption .LogoPreHome {
+    float: none!important;
+    margin: auto;
+}
+
+.PreHomeOption p {
+    font-family: 'Permanent Marker', cursive;
+    color: #fff;
+    font-size: 60px;
+    text-shadow: 1px 1px 0 #000;
+    text-align: center;
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .PreHomeOption p {
+        text-align: center;
+        font-size: 30px;
+    }
+}

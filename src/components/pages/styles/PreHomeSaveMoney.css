@@ -1,0 +1,22 @@
+.PreHomeSaveMoney {
+    position: fixed;
+    background: url('./../../../assets/images/slide.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding: 3rem;
+}
+
+.PreHomeSaveMoney p {
+    font-family: 'Permanent Marker', cursive;
+    color: #194E92;
+    text-align: right;
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    .PreHomeSaveMoney p {
+        text-align: center;
+        font-size: 30px;
+    }
+}

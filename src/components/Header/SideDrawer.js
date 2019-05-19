@@ -4,9 +4,9 @@ import './styles/SideDrawer.css'
 
 class SideDrawer extends React.PureComponent {
     render() {
-        let drawerClasses = 'side-drawer';
+        let drawerClasses = 'SideDrawer';
         if (this.props.sideDrawerOpen) {
-            drawerClasses = 'side-drawer open';
+            drawerClasses = 'SideDrawer SideDrawerOpen';
         }
         return (
             <nav className={drawerClasses}>

@@ -18,10 +18,11 @@ import "../node_modules/slick-carousel/slick/slick-theme.css";
 
 import {
     faTimes,
-    faHome
+    faHome,
+    faCheck
 } from '@fortawesome/free-solid-svg-icons';
 
-library.add(fab, faTimes, faHome);
+library.add(fab, faCheck, faHome, faTimes);
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
