@@ -1,3 +1,10 @@
+.NavBar>* {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 .NavBar {
     z-index: 100;
     background: transparent;
@@ -26,6 +33,10 @@
     padding: 38px 20px;
 }
 
+.NavBarTop .ChangeLanguage span {
+    color: #fff;
+}
+
 .NavBarFix {
     height: 70px;
 }
@@ -41,6 +52,10 @@
 
 .NavBarFix .NavBarBtnMenu {
     padding: 24px 20px;
+}
+
+.NavBarFix .ChangeLanguage span {
+    color: #007bff;
 }
 
 .Menu {
@@ -69,71 +84,3 @@
     justify-content: center;
     align-items: center;
 }
-
-/* 
-.MenuItem {
-}
-
-.MenuItem a {
-    line-height: 100px;
-    height: 100px;
-}
-
-.MenuItem a:hover {
-    color: #555;
-    text-decoration: none;
-    border-bottom: 6px solid #549b41;
-    text-shadow: 1px 1px 0px white;
-}
-
-.NavBarBtnMenu {
-    height: 100px;
-    line-height: 100px;
-    justify-content: center;
-    align-items: center;
-    padding: 38px 20px;
-}
-
-.MenuMobile {
-    width: 40%;
-    position: absolute;
-    background: red;
-    height: 100%;
-    padding-top: 10%;
-    z-index: 10;
-    transition: color 0.6s ease, border 0.2s ease;
-}
-
-.MenuMobile .MenuItem {
-    float: none;
-}
-
-.NavBarTop {
-    height: 70px!important;
-}
-
-.NavBarTop .LogoMenu {
-    margin: 8px!important;
-}
-
-.NavBarTop .MenuItem {
-    height: 70px!important;
-}
-
-.NavBarTop .MenuItem a {
-    line-height: 70px;
-    height: 70px;
-}
-
-.NavBarTop .NavBarBtnMenu {
-    height: 70px;
-    line-height: 70px;
-}
-
-.NavBarTop .Menu ul {
-    margin: 0;
-}
-
-.NavBarTop .LogoMenu img {
-    width: 100px;
-} */

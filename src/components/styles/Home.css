@@ -1,9 +1,28 @@
 .Home {
     padding-top: 100px;
     width: 100%;
-    background: url('./../../assets/images/OIH9JD0.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
+    /* background: url('./../../assets/images/OIH9JD0.jpg'); */
+    /* background-size: 100%; */
+    /* background-repeat: no-repeat; */
+}
+
+.Home .HomeSubcontainer {
+    background: #fff;
+    margin: 25rem 0 0 0;
+}
+
+@media only screen and (max-width: 992px) {
+    .Home .HomeSubcontainer {
+        background: #fff;
+        margin: 22rem 0 0 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .Home .HomeSubcontainer {
+        background: #fff;
+        margin: 16rem 0 0 0;
+    }
 }
 
 .Home .container-fluid {
@@ -12,17 +31,61 @@
     margin-left: auto;
 }
 
-/* .HomeBg {
-    position: fixed;
+.HomeBg0 {
+    position: absolute;
+    background: url('./../../assets/images/OIH9JD0.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.HomeBg1 {
+    position: absolute;
+    background: url('./../../assets/images/4282.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    left: 100%;
+}
+
+.HomeBg2 {
+    position: absolute;
+    background: url('./../../assets/images/renovable.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    left: 200%;
+}
+
+.HomeBg {
+    position: absolute;
     width: 100%;
     height: 100%;
     z-index: -100;
     top: 0;
     right: 0;
     min-height: 500px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-} */
+    transition: all 0.6s ease, border 0.2s ease;
+}
+
+.BgImage0 {
+    right: 0;
+}
+
+.BgImage1 {
+    right: 100%;
+}
+
+.BgImage2 {
+    right: 200%;
+}
+
+.HomeSlideContainer {
+    margin: 6.5rem;
+}
 
 .HomePhrase {
     font-size: 4rem;

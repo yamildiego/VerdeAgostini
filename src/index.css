@@ -1,5 +1,20 @@
 body {
     background: #F2F4F1;
+    overflow-x: hidden;
+}
+
+*::selection {
+    background: #308619;
+    color: #69dc69;
+    text-shadow: 1px 1px 3px #000;
+}
+
+/* Firefox */
+
+*::-moz-selection {
+    background: #308619;
+    color: #69dc69;
+    text-shadow: 1px 1px 3px #000;
 }
 
 h1, h2, h3, h4, h5 {

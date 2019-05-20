@@ -1,18 +1,7 @@
-.change-language {
-    text-align: right;
+.ChangeLanguage {
     margin-right: 1rem;
     font-size: 0.8rem;
-}
-
-.change-language a {
-    color: #999;
-    cursor: pointer;
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
-}
-
-.change-language a.active, .change-language a:active, .change-language a:hover {
-    color: #222;
+    text-align: right;
 }
 
 .ChangeLanguageTop {
@@ -21,4 +10,9 @@
 
 .ChangeLanguageFix {
     line-height: 65px
+}
+
+.ChangeLanguage span {
+    cursor: pointer;
+    text-decoration: underline;
 }
