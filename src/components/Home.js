@@ -26,7 +26,7 @@ class Home extends Component {
                     <div className="container-fluid">
                         <div className="row">
                             <div className="col-12 p-0">
-                                <ChangeLanguage />
+                                {/* <ChangeLanguage /> */}
                                 <div style={{ position: 'relative' }}>
                                     <div className="HomeBg"></div>
                                     <p className="HomePhrase">

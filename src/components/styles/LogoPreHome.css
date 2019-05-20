@@ -1,22 +1,21 @@
 .LogoPreHome {
     margin: 3rem;
     float: right;
-    width: 180px;
-    height: 180px;
-    background: #fff;
     text-align: center;
     padding: 20px;
-    border-radius: 106px;
 }
 
-.LogoPreHome span {
+.LogoPreHome img {
+    width: 200px;
+}
+
+.LogoPreHomeText {
+    font-size: 25px;
+    color: #222;
     line-height: 50px;
     font-family: 'SprayPaint';
 }
 
-@media only screen and (max-width: 768px) {
-    .LogoPreHome {
-        float: none;
-        margin: auto;
-    }
+.LogoPreHomeEntry:hover {
+    text-decoration: none!important;
 }

@@ -4,7 +4,6 @@
     background-size: cover;
     height: 100%;
     width: 100%;
-    padding: 3rem;
 }
 
 .PreHomeOption .LogoPreHome {
@@ -13,7 +12,6 @@
 }
 
 .PreHomeOption p {
-    font-family: 'Permanent Marker', cursive;
     color: #fff;
     font-size: 60px;
     text-shadow: 1px 1px 0 #000;

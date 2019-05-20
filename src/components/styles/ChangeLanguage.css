@@ -14,3 +14,11 @@
 .change-language a.active, .change-language a:active, .change-language a:hover {
     color: #222;
 }
+
+.ChangeLanguageTop {
+    line-height: 95px
+}
+
+.ChangeLanguageFix {
+    line-height: 65px
+}

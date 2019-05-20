@@ -35,29 +35,29 @@
         "services": [
             {
                 "id": "1",
-                "title": "TermotanquesENINGLES",
-                "subtitle": "ENINGLESAsesoramiento e instalaciones",
+                "title": "Hot water tank",
+                "subtitle": "Advice and facilities",
                 "image": "./../assets/images/termotanque.jpg",
                 "description": "ENINGLESLorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, provident? Eius asperiores in itaque mollitia qui accusantium distinctio a dolores est."
             },
             {
                 "id": "2",
-                "title": "Luminarias ledENINGLES",
-                "subtitle": "ENINGLESExpertos en campos de juego",
+                "title": "LED luminaires",
+                "subtitle": "Experts in stadium",
                 "image": "./../assets/images/5285.jpg",
                 "description": "ENINGLESLorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, provident? Eius asperiores in itaque mollitia qui accusantium distinctio a dolores est."
             },
             {
                 "id": "3",
-                "title": "PiscinasENINGLES",
-                "subtitle": "ENINGLESClimatización solar",
+                "title": "Swimming pools",
+                "subtitle": "Solar air conditioning",
                 "image": "./../assets/images/piscinas.jpg",
                 "description": "ENINGLESLorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, provident? Eius asperiores in itaque mollitia qui accusantium distinctio a dolores est."
             },
             {
                 "id": "4",
-                "title": "Paneles solaresENINGLES",
-                "subtitle": "ENINGLESServicio de instalacion",
+                "title": "Solar panels",
+                "subtitle": "Installation service",
                 "image": "./../assets/images/paneles.jpg",
                 "description": "ENINGLESLorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, provident? Eius asperiores in itaque mollitia qui accusantium distinctio a dolores est."
             }

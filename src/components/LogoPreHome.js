@@ -1,22 +1,21 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-import Logo from './../assets/images/logo.png';
+import Logo from './../assets/images/logox500.fw.png';
 import './styles/LogoPreHome.css'
 
 class LogoPreHome extends Component {
-    state = {}
     render() {
         return (
-            <Link to="/inicio">
-                <div className="LogoPreHome">
+            <div className="LogoPreHome">
+                <Link to="/inicio" className="LogoPreHomeEntry">
                     <div className="w-100">
                         <img src={Logo} alt="Verde Agostini" />
                     </div>
-                    <span>
+                    <span className="LogoPreHomeText">
                         Ingresar
-                </span>
-                </div>
-            </Link>
+                    </span>
+                </Link>
+            </div>
         );
     }
 }
