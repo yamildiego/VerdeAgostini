@@ -1,0 +1,101 @@
+.Service {
+    cursor: pointer;
+}
+
+.Service .ServiceCard {
+    border: 0!important;
+    border-radius: 0!important;
+    box-shadow: 0 7px 15px #444;
+}
+
+.Service:hover .ServiceCard {
+    background: #FAFAFA;
+    box-shadow: 2px 2px 30px #222;
+    border: 0;
+}
+
+.ServiceText {
+    font-family: sans-serif;
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+.Service:hover .ServiceBody {
+    height: 120px;
+}
+
+.ServiceBody {
+    height: 80px;
+    position: relative;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+    padding: 2.25rem 10px!important;
+}
+
+.ServiceBody .ServiceTitle {
+    font-size: 0.8rem;
+    color: #333;
+    background: #ffffffaa;
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.ServiceFooter {
+    position: relative;
+    background: #00000099!important;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ServiceImage {
+    height: 200px;
+}
+
+.ServiceImage img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.Service button {
+    opacity: 0;
+}
+
+.Service:hover button {
+    opacity: 1;
+}
+
+.ServiceSubtitle {
+    color: #fff!important;
+    font-size: 12px;
+}
+
+.card-footer:last-child {
+    border-radius: 0!important;
+}
+
+@media only screen and (max-width: 1024px) {
+    .ServiceBody {
+        padding: 0.25rem!important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .ServiceBody {
+        padding: 0.25rem!important;
+    }
+    .ServiceTitle {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        margin-bottom: 0!important;
+    }
+}

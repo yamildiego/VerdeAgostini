@@ -8,10 +8,7 @@ class AlertCookies extends React.Component {
     componentDidMount = () => {
         var _this = this;
         localforage.getItem('acceptCookies', function (err, value) {
-            if (value === true)
-                _this.setState({ acceptCookies: true });
-            else
-                _this.setState({ acceptCookies: false });
+            _this.setState({ acceptCookies: value === true });
         });
     }
     handleClick = () => {
@@ -27,7 +24,7 @@ class AlertCookies extends React.Component {
                         Si continúas navegando aceptas su uso.
                         <Link className="link" to="/politica-de-cookies">Política de cookies</Link>
                         <div className="text-center mt-2">
-                            <button onClick={this.handleClick} className="btn btn-light" type="button">Aceptar</button>
+                            <button onClick={this.handleClick} className="btn btn-outline-light" type="button">Aceptar</button>
                         </div>
                     </div>
                 }

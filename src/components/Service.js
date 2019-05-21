@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './styles/Services.css';
 
 class Service extends Component {
     state = {}
@@ -6,16 +7,16 @@ class Service extends Component {
     render() {
         return (
             <div className="Service col-6 col-md-3 mb-3" >
-                <div className="card Service-Card">
+                <div className="card ServiceCard">
                     <div className="ServiceImage">
-                        <img src={this.props.image} alt="" />
+                        <img src={this.props.image} alt={this.props.title} />
                     </div>
-                    <div className="card-body Service-Body">
-                        <div className="card-title Service-Title h6">{this.props.title}</div>
+                    <div className="card-body ServiceBody">
+                        <div className="card-title ServiceTitle h6">{this.props.title}</div>
                         <button className="btn btn-info btn-sm btn-block mt-2">Ver mas</button>
                     </div>
-                    <div className="card-footer Service-Footer">
-                        <small className="Service-Subtitle">{this.props.subtitle}</small>
+                    <div className="card-footer ServiceFooter">
+                        <small className="ServiceSubtitle">{this.props.subtitle}</small>
                     </div>
                 </div>
             </div >
@@ -23,11 +24,4 @@ class Service extends Component {
     }
 }
 
-// function mapStateToProps(state, props) {
-//     return {
-//     }
-// }
-
-// export default connect(mapStateToProps)(Service);
-// export default connect()(Service);
 export default Service;

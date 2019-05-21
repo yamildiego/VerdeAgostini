@@ -4,15 +4,18 @@
     z-index: 20;
     width: 40%;
     left: 2rem;
-    background: #e94f51;
+    background: #2f8518;
     color: #fff;
     padding: 1.5rem;
-    border-radius: 25px;
+}
+
+.AlertCookies button {
+    border-radius: 0;
 }
 
 @media only screen and (max-width: 768px) {
     .AlertCookies {
-        left: 10%;
-        width: 80%;
+        left: 5%;
+        width: 90%;
     }
 }

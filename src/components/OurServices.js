@@ -1,23 +1,20 @@
 import React, { Component } from 'react';
-import Service from './Service';
 import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
-import './styles/OurServices.css';
+import Service from './Service';
 
 class OurServices extends Component {
     state = {}
     render() {
         return (
-            <div className="OurServices mt-5 mb-5">
-                <h1>
+            <div className="pt-5">
+                <h1 className="text-center mb-3">
                     <FormattedMessage locale={this.props.lang} id="title.ourservices" />
                 </h1>
                 <div className="row">
                     {
-                        // // console.log(this.props)
                         this.props.services.map(item => {
                             return <Service key={item.id} {...item} />
-                            // return <Service key={item.id} id={item.id} />
                         })
                     }
                 </div>

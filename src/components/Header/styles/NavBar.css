@@ -22,7 +22,8 @@
 
 .NavBarTop .LogoMenu img {
     margin: 10px;
-    width: 145px;
+    width: 100%;
+    max-width: 145px;
 }
 
 .NavBarTop .Menu li a {

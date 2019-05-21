@@ -1,4 +1,4 @@
-import data from './../data.json';
+import data from './../data';
 
 export default function services(state = { ...data }, action = {}) {
     switch (action.type) {
