@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import { connect } from 'react-redux';
 import { IntlProvider } from 'react-intl';
 import HandleError from './components/HandleError';
@@ -9,6 +9,7 @@ import PreHomeInvesment from './components/pages/PreHomeInvesment';
 import Contact from './components/pages/Contact';
 import Home from './components/Home';
 import messages from './lang';
+import { CSSTransition } from 'react-transition-group';
 
 const preHomes = {
     0: PreHomeSaveMoney,
@@ -18,6 +19,12 @@ const preHomes = {
 
 const randomCover = Math.floor(Math.random() * 3);
 
+const routes = [
+    { path: '/', Component: preHomes[randomCover] },
+    { path: '/inicio', Component: Home },
+    { path: '/contacto', Component: Contact },
+]
+
 class App extends Component {
     state = {}
     render() {
@@ -25,12 +32,22 @@ class App extends Component {
             <HandleError>
                 <IntlProvider locale={this.props.lang} messages={messages[this.props.lang]}>
                     <Router basename="/">
-                        <Switch>
-                            <Route exact path="/" component={preHomes[randomCover]} />
-                            <Route path="/inicio" render={(props) => <Home />} />
-                            <Route exact path="/contacto" component={Contact} />
-                            {/* <Route exact path="/politica-de-cookies" component={CookiesPolicy} /> */}
-                        </Switch>
+                        {routes.map(({ path, Component }) => (
+                            <Route key={path} exact path={path}>
+                                {({ match }) => (
+                                    <CSSTransition
+                                        in={match != null}
+                                        timeout={300}
+                                        classNames="page"
+                                        unmountOnExit
+                                    >
+                                        <div className="page">
+                                            <Component />
+                                        </div>
+                                    </CSSTransition>
+                                )}
+                            </Route>
+                        ))}
                     </Router>
                 </IntlProvider>
             </HandleError>

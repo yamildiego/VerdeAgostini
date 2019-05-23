@@ -24,7 +24,10 @@ export default {
         "section.check7": "ENGLISH Silencioso",
         "section.check8": "ENGLISH Resistente a lluvia viento y granizo",
         "section.check9": "ENGLISH 5 años de garantía",
-        "section.check10": "ENGLISH 25 años de vida útil"
+        "section.check10": "ENGLISH 25 años de vida útil",
+        "footer.yamildiego": "English das por Yamil Diego",
+        "footer.copyrightshort": "© 2019 VerdeAgostini",
+        "footer.copyright": "Englsih© 2019 VerdeAgostini- Todos los derechos reservados."
     },
     es: {
         "nav.home": "Inicio",
@@ -51,6 +54,9 @@ export default {
         "section.check7": "Silencioso",
         "section.check8": "Resistente a lluvia viento y granizo",
         "section.check9": "5 años de garantía",
-        "section.check10": "25 años de vida útil"
+        "section.check10": "25 años de vida útil",
+        "footer.yamildiego": "Desarrollado por Yamil Diego",
+        "footer.copyrightshort": "© 2019 VerdeAgostini",
+        "footer.copyright": "© 2019 VerdeAgostini - Todos los derechos reservados."
     }
 };

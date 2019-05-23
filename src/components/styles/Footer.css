@@ -12,11 +12,6 @@
     font-size: 30px;
 }
 
-.inner-div {
-    font-size: 20px;
-    padding: 20px;
-}
-
 .FooterBtnLink {
     border-radius: 40px;
     width: 40px;
@@ -41,7 +36,7 @@
     background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
-    line-height: 45px;
+    line-height: 50px;
 }
 
 .FooterF svg {
@@ -50,4 +45,36 @@
 
 .FooterBtnLink:hover {
     box-shadow: 0 0 10px #444;
+}
+
+.YD {
+    line-height: 96px;
+    font-size: 12px;
+    color: #3b5998;
+    cursor: pointer;
+}
+
+.YD:hover {
+    text-decoration: underline;
+}
+
+.FooterText {
+    font-size: 20px;
+    line-height: 96px;
+}
+
+.FooterRedesSociales {
+    padding: 20px 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .FooterText {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .FooterText {
+        font-size: 12px;
+    }
 }

@@ -43,7 +43,7 @@ class NavBar extends React.Component {
                                     </li>
                                     <li>
                                         <Link to="/servicios">
-                                            <FormattedMessage locale={this.props.lang} id="nav.service" />
+                                            <FormattedMessage locale={this.props.lang} id="nav.products" />
                                         </Link>
                                     </li>
                                     <li>
