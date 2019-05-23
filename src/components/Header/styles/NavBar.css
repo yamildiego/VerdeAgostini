@@ -24,6 +24,7 @@
     margin: 10px;
     width: 100%;
     max-width: 145px;
+    transition: all 0.6s ease, border 0.2s ease;
 }
 
 .NavBarTop .Menu li a {
@@ -34,17 +35,14 @@
     padding: 38px 20px;
 }
 
-.NavBarTop .ChangeLanguage span {
-    color: #fff;
-}
-
 .NavBarFix {
     height: 70px;
 }
 
 .NavBarFix .LogoMenu img {
     margin: 8px;
-    width: 100px;
+    width: 85px;
+    transition: all 0.6s ease, border 0.2s ease;
 }
 
 .NavBarFix .Menu li a {
@@ -53,10 +51,6 @@
 
 .NavBarFix .NavBarBtnMenu {
     padding: 24px 20px;
-}
-
-.NavBarFix .ChangeLanguage span {
-    color: #007bff;
 }
 
 .Menu {

@@ -9,7 +9,7 @@ class OurServices extends Component {
         return (
             <div className="pt-5">
                 <h1 className="text-center mb-3">
-                    <FormattedMessage locale={this.props.lang} id="title.ourservices" />
+                    <FormattedMessage locale={this.props.lang} id="ourservices.title" />
                 </h1>
                 <div className="row">
                     {

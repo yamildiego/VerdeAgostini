@@ -1,67 +1,58 @@
-.Section {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
-}
+ .Section {
+     margin-top: 6rem;
+     margin-bottom: 6rem;
+ }
 
-ul.SectionList {
-    list-style-type: none;
-}
+ .SectionImage {
+     height: 600px;
+ }
 
-.SectionList li {
-    line-height: 50px;
-}
+ .SectionImage img {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     -o-object-fit: cover;
+     object-fit: cover;
+ }
 
-.Section .fa-check {
-    color: #5ca04a;
-    font-size: 35px;
-    padding-right: 5px
-}
+ .SectionItem {
+     text-align: center;
+     height: 120px;
+     border-top: 1px solid #CCC;
+     border-right: 1px solid #CCC;
+ }
 
-.SectionText {
-    vertical-align: super;
-    font-size: 16px;
-}
+ .SectionText {
+     cursor: default;
+     font-size: 14px;
+     font-family: 'Montserrat', sans-serif;
+ }
 
-.SectionItem {
-    padding: .5rem!important;
-}
+ .SectionItem.last-child {
+     border-bottom: 1px solid #CCC;
+ }
 
-.Section .d-flex {
-    width: 100%;
-}
+ .SectionItem svg {
+     font-size: 50px;
+     color: #41902d;
+ }
 
-@media only screen and (min-width: 1200px) {
-    .SectionText {
-        vertical-align: top;
-        font-size: 20px;
-    }
-}
+ @media only screen and (max-width: 1200px) {
+     .SectionItem svg {
+         font-size: 45px;
+     }
+     .SectionText {
+         font-size: 13px;
+     }
+ }
 
-@media only screen and (max-width: 1200px) {
-    .SectionText {
-        vertical-align: super;
-        font-size: 18px;
-    }
-}
-
-@media only screen and (max-width: 992px) {
-    .SectionText {
-        vertical-align: super;
-        font-size: 16px;
-    }
-    .SectionItem {
-        padding: 0!important;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .SectionText {
-        vertical-align: super;
-        font-size: 16px;
-    }
-    .Section .d-flex {
-        width: 360px;
-        margin: auto;
-        margin-top: 15px;
-    }
-}
+ @media only screen and (max-width: 992px) {
+     .SectionItem svg {
+         font-size: 45px;
+     }
+     .SectionText {
+         font-size: 12px;
+     }
+ }

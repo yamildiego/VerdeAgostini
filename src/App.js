@@ -5,6 +5,7 @@ import { IntlProvider } from 'react-intl';
 import HandleError from './components/HandleError';
 import PreHomeSaveMoney from './components/pages/PreHomeSaveMoney';
 import PreHomeOption from './components/pages/PreHomeOption';
+import PreHomeInvesment from './components/pages/PreHomeInvesment';
 import Contact from './components/pages/Contact';
 import Home from './components/Home';
 import messages from './lang';
@@ -12,7 +13,7 @@ import messages from './lang';
 const preHomes = {
     0: PreHomeSaveMoney,
     1: PreHomeOption,
-    2: PreHomeSaveMoney
+    2: PreHomeInvesment
 }
 
 const randomCover = Math.floor(Math.random() * 3);

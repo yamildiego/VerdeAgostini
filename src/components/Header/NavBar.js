@@ -31,7 +31,9 @@ class NavBar extends React.Component {
                                     </Link>
                                 </div>
                             </div>
-                            <div className="col-lg-5 col-4"></div>
+                            <div className="col-lg-5 col-4">
+                                <ChangeLanguage className="d-block d-lg-none" isTop={this.state.isTop} />
+                            </div>
                             <div className="col-5 d-none d-lg-block d-xl-block">
                                 <ul className="Menu">
                                     <li>

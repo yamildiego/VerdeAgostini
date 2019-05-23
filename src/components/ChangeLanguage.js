@@ -7,7 +7,7 @@ class ChangeLanguage extends React.PureComponent {
     handleLocaleSet = (lang) => this.props.dispatch(actions.localeSet(lang));
     render() {
         return (
-            <div className="ChangeLanguage">
+            <div className={this.props.className ? ("ChangeLanguage " + this.props.className) : "ChangeLanguage"}>
                 {
                     this.props.lang === "en" &&
                     <span className={(this.props.isTop ? "ChangeLanguageTop" : "ChangeLanguageFix")} onClick={() => this.handleLocaleSet("es")} >Español</span>

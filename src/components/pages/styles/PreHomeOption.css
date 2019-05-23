@@ -4,24 +4,47 @@
     background-size: cover;
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
-.PreHomeOption .LogoPreHome {
-    float: none!important;
+.PreHomeOptionBody {
+    max-width: 600px;
+    width: 100%;
     margin: auto;
+    background: #00000044;
+    height: 100%;
+}
+
+.PreHomeOptionLogo {
+    text-align: center;
+    padding: 50px;
+}
+
+.PreHomeOptionLogo img {
+    width: 250px;
+}
+
+.PreHomeOptionText {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 1px 1px 0 #000;
+    text-align: center;
 }
 
 .PreHomeOption p {
-    color: #fff;
-    font-size: 60px;
-    text-shadow: 1px 1px 0 #000;
-    text-align: center;
-    margin-top: 0;
+    margin: 0;
 }
 
-@media only screen and (max-width: 768px) {
-    .PreHomeOption p {
-        text-align: center;
-        font-size: 30px;
-    }
+.PreHomeOptionLink {
+    font-family: 'SprayPaint';
+    font-size: 30px;
+    color: #000;
+    text-align: center;
+    text-shadow: 0px 1px 1px #fff;
+}
+
+.PreHomeOptionLink:hover {
+    text-decoration: none;
+    color: #000;
 }

@@ -1,0 +1,41 @@
+.PreHomeInvesment {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.PreHomeInvesment img {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+}
+
+.PreHomeInvesmentLogoText {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 1px 1px 0 #000;
+    text-align: center;
+}
+
+.PreHomeInvesmentLogoEntry {
+    font-family: 'SprayPaint';
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 0px 1px 1px #fff;
+}
+
+.PreHomeInvesmentLogoEntry a {
+    color: #000;
+}
+
+.PreHomeInvesmentLogoEntry a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.PreHomeInvesmentBg {
+    background: url("./../../../assets/images/3170.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

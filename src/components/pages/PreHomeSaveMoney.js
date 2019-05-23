@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import LogoPreHome from '../LogoPreHome';
+import { Link } from "react-router-dom";
+import Logo from './../../assets/images/logox500.fw.png';
 import './styles/PreHomeSaveMoney.css';
 
 class PreHomeSaveMoney extends Component {
@@ -7,13 +8,16 @@ class PreHomeSaveMoney extends Component {
     render() {
         return (
             <div className="PreHomeSaveMoney">
-                <p>
-                    Ahorrar no es solo guardar
-                </p>
-                <p>
-                    sino saber gastar.
-                </p>
-                <LogoPreHome />
+                <div className="PreHomeSaveMoneyLogo">
+                    <img src={Logo} alt="Verde Agostini" />
+                </div>
+                <div className="PreHomeSaveMoneyText">
+                    <p>Ahorrar no es solo guardar</p>
+                    <p>sino saber gastar.</p>
+                </div>
+                <div className="PreHomeSaveMoneyEntry">
+                    <Link to="/inicio" className="PreHomeSaveMoneyLink">Ingresar</Link>
+                </div>
             </div>
         );
     }

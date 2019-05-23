@@ -5,11 +5,8 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 import './index.css';
 import './assets/fonts/fonts.css';
-// import data from './data.json';
 
 import 'bootstrap';
-// import "../node_modules/slick-carousel/slick/slick.css";
-// import "../node_modules/slick-carousel/slick/slick-theme.css";
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -24,13 +21,23 @@ import App from './App';
 import rootReducers from './reducers/rootReducers';
 import * as serviceWorker from './serviceWorker';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
+import { fab, faWhatsapp, faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import {
-    faTimes, faHome,
-    faCheck, faSpinner
+    faTimes, faHome, faCheck, faSpinner,
+    faUser, faPhone, faEnvelope, faAt,
+    faMapMarkerAlt, faHandHoldingUsd,
+    faReceipt, faTemperatureHigh,
+    faSun, faVial, faVolumeMute, faFileAlt,
+    faHeart, faCommentDollar, faCloudShowersHeavy
 } from '@fortawesome/free-solid-svg-icons';
 
-library.add(fab, faSpinner, faCheck, faHome, faTimes);
+library.add(fab, faWhatsapp, faFacebookF, faInstagram,
+    faTimes, faHome, faCheck, faSpinner,
+    faUser, faPhone, faEnvelope, faAt,
+    faMapMarkerAlt, faHandHoldingUsd,
+    faReceipt, faTemperatureHigh,
+    faSun, faVial, faVolumeMute, faFileAlt,
+    faHeart, faCommentDollar, faCloudShowersHeavy);
 addLocaleData([...en, ...es])
 
 const store = createStore(
