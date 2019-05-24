@@ -13,6 +13,7 @@ import ReactDOM from 'react-dom';
 import { addLocaleData } from 'react-intl';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from "react-redux";
+import { BrowserRouter as Router } from 'react-router-dom';
 import thunk from "redux-thunk";
 import { composeWithDevTools } from 'redux-devtools-extension';
 import es from 'react-intl/locale-data/es';
@@ -47,7 +48,9 @@ const store = createStore(
 
 ReactDOM.render(
     <Provider store={store}>
-        <App />
+        <Router basename="/">
+            <App />
+        </Router>
     </Provider>
     , document.getElementById('root'));
 

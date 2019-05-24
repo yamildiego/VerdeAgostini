@@ -41,22 +41,22 @@ class NavBar extends React.Component {
                             <div className="col-5 d-none d-lg-block d-xl-block">
                                 <ul className="Menu">
                                     <li>
-                                        <Link to="/inicio">
+                                        <Link to={(this.props.lang === "es") ? `/inicio` : `/inicio/${this.props.lang}`}>
                                             <FormattedMessage locale={this.props.lang} id="nav.home" />
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/servicios">
+                                        <Link to={(this.props.lang === "es") ? `/productos` : `/productos/${this.props.lang}`}>
                                             <FormattedMessage locale={this.props.lang} id="nav.products" />
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/nosotros">
+                                        <Link to={(this.props.lang === "es") ? `/nosotros` : `/nosotros/${this.props.lang}`}>
                                             <FormattedMessage locale={this.props.lang} id="nav.about" />
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/contacto">
+                                        <Link to={(this.props.lang === "es") ? `/contacto` : `/contacto/${this.props.lang}`}>
                                             <FormattedMessage locale={this.props.lang} id="nav.contact" />
                                         </Link>
                                     </li>
@@ -71,4 +71,10 @@ class NavBar extends React.Component {
     }
 }
 
-export default connect()(NavBar);
+function mapStateToProps(state, props) {
+    return {
+        lang: state.locale.lang
+    }
+}
+
+export default connect(mapStateToProps)(NavBar);
