@@ -10,10 +10,14 @@ import './styles/NavBar.css';
 class NavBar extends React.Component {
     state = { isTop: true }
     componentDidMount = () => {
-        document.addEventListener('scroll', () => {
-            const isTop = window.scrollY < 100;
-            if (isTop !== this.state.isTop) this.setState({ isTop })
-        });
+        document.addEventListener('scroll', this.checkScroll);
+    }
+    componentWillUnmount = () => {
+        document.removeEventListener('scroll', this.checkScroll);
+    }
+    checkScroll = () => {
+        const isTop = window.scrollY < 100;
+        if (isTop !== this.state.isTop) this.setState({ isTop })
     }
     render() {
         return (

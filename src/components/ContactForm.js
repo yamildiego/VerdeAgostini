@@ -28,12 +28,12 @@ class ContactForm extends React.Component {
             <React.Fragment>
                 <Loading loading={this.props.isLoading} />
                 <form className="ContactForm form-horizontal mt-4" onSubmit={this.handleSubmit}>
-                    <h4 class="heading">
+                    <h4 className="heading">
                         <FormattedMessage locale={this.props.lang} id="contact.subtitleform" />
                     </h4>
-                    <div class="form-group">
-                        <div class="col-12">
-                            <label class="control-label" htmlFor="inputName">
+                    <div className="form-group">
+                        <div className="col-12">
+                            <label className="control-label" htmlFor="inputName">
                                 <FontAwesomeIcon icon="user" />
                             </label>
                             <FormattedMessage locale={this.props.lang} id="contact.form.name">
@@ -51,9 +51,9 @@ class ContactForm extends React.Component {
                             </FormattedMessage>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <div class="col-12">
-                            <label class="control-label" htmlFor="inputPhone">
+                    <div className="form-group">
+                        <div className="col-12">
+                            <label className="control-label" htmlFor="inputPhone">
                                 <FontAwesomeIcon icon="phone" />
                             </label>
                             <FormattedMessage locale={this.props.lang} id="contact.form.phone" >
@@ -71,9 +71,9 @@ class ContactForm extends React.Component {
                             </FormattedMessage>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <div class="col-12">
-                            <label class="control-label" htmlFor="inputEmail">
+                    <div className="form-group">
+                        <div className="col-12">
+                            <label className="control-label" htmlFor="inputEmail">
                                 <FontAwesomeIcon icon="at" />
                             </label>
                             <FormattedMessage locale={this.props.lang} id="contact.form.email" >
@@ -91,9 +91,9 @@ class ContactForm extends React.Component {
                             </FormattedMessage>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <div class="col-12">
-                            <label class="control-label" htmlFor="inputMessage">
+                    <div className="form-group">
+                        <div className="col-12">
+                            <label className="control-label" htmlFor="inputMessage">
                                 <FontAwesomeIcon icon="envelope" />
                             </label>
                             <FormattedMessage locale={this.props.lang} id="contact.form.message" >

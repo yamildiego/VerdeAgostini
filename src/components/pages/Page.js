@@ -4,14 +4,22 @@ import AlertCookies from './../AlertCookies';
 import Footer from './../Footer';
 
 class Page extends Component {
-    state = {}
     render() {
         return (
             <React.Fragment>
-                <Header />
-                <AlertCookies />
+                {
+                    this.props.withLayOut &&
+                    <Header />
+                }
+                {
+                    this.props.withLayOut &&
+                    <AlertCookies />
+                }
                 {this.props.children}
-                <Footer />
+                {
+                    this.props.withLayOut &&
+                    <Footer />
+                }
             </React.Fragment>
         );
     }

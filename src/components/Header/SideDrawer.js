@@ -13,22 +13,22 @@ class SideDrawer extends React.PureComponent {
             <nav className={drawerClasses}>
                 <ul>
                     <li>
-                        <Link to="/inicio">
+                        <Link to="/inicio" onClick={this.props.handleClickCloseMenu}>
                             <FormattedMessage locale={this.props.lang} id="nav.home" />
                         </Link>
                     </li>
                     <li>
-                        <Link to="/servicios">
+                        <Link to="/servicios" onClick={this.props.handleClickCloseMenu}>
                             <FormattedMessage locale={this.props.lang} id="nav.products" />
                         </Link>
                     </li>
                     <li>
-                        <Link to="/nosotros">
+                        <Link to="/nosotros" onClick={this.props.handleClickCloseMenu}>
                             <FormattedMessage locale={this.props.lang} id="nav.about" />
                         </Link>
                     </li>
                     <li>
-                        <Link to="/contacto">
+                        <Link to="/contacto" onClick={this.props.handleClickCloseMenu}>
                             <FormattedMessage locale={this.props.lang} id="nav.contact" />
                         </Link>
                     </li>

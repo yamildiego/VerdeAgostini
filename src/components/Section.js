@@ -17,7 +17,6 @@ const icons = [
     "receipt",
     "file-alt",
 ]
-// "vials",
 class Section extends Component {
     render() {
         return (

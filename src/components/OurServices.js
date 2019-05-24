@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import Service from './Service';
 
 class OurServices extends Component {
-    state = {}
     render() {
         return (
             <div className="pt-5">

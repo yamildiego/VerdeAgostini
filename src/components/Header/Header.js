@@ -23,7 +23,10 @@ class Header extends React.Component {
                     this.state.sideDrawerOpen &&
                     <Backdrop handleClickCloseMenu={this.handleClickCloseMenu} />
                 }
-                <SideDrawer sideDrawerOpen={this.state.sideDrawerOpen} />
+                <SideDrawer
+                    sideDrawerOpen={this.state.sideDrawerOpen}
+                    handleClickCloseMenu={this.handleClickCloseMenu}
+                />
             </React.Fragment>
         )
     }

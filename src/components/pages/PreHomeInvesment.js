@@ -7,7 +7,7 @@ class PreHomeInvesment extends Component {
     render() {
         return (
             <div className="PreHomeInvesment">
-                <div class="d-flex justify-content-between h-100">
+                <div className="d-flex justify-content-between h-100">
                     <div className="w-50 PreHomeInvesmentBg">
                         <div className="d-flex flex-column justify-content-center h-100">
                             <div className="PreHomeInvesmentLogoText">

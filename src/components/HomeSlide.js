@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Logo from './../assets/images/logox500.fw.png'
 import './styles/HomeSlide.css';
 
 class HomeSlide extends Component {
@@ -6,7 +7,12 @@ class HomeSlide extends Component {
         return (
             <div className="HomeSlide HomeSlideImage0">
                 <div className="HomeSlideBody">
-                    <h1 className="text-center">Contenido del Home</h1>
+                    <div className="d-flex justify-content-between h-100">
+                        <div className="w-50"></div>
+                        <div className="HomeSlideLeft">
+                            <img src={Logo} alt="" />
+                        </div>
+                    </div>
                 </div>
             </div>
         );

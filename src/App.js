@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { connect } from 'react-redux';
 import { IntlProvider } from 'react-intl';
 import HandleError from './components/HandleError';
 import PreHomeSaveMoney from './components/pages/PreHomeSaveMoney';
 import PreHomeOption from './components/pages/PreHomeOption';
 import PreHomeInvesment from './components/pages/PreHomeInvesment';
+import Page from './components/pages/Page';
 import Contact from './components/pages/Contact';
 import Home from './components/Home';
 import messages from './lang';
-import { CSSTransition } from 'react-transition-group';
+// import { CSSTransition } from 'react-transition-group';
 
 const preHomes = {
     0: PreHomeSaveMoney,
@@ -19,11 +20,11 @@ const preHomes = {
 
 const randomCover = Math.floor(Math.random() * 3);
 
-const routes = [
-    { path: '/', Component: preHomes[randomCover] },
-    { path: '/inicio', Component: Home },
-    { path: '/contacto', Component: Contact },
-]
+// const routes = [
+//     { path: '/', withLayOut: false, Component: preHomes[randomCover] },
+//     { path: '/inicio', withLayOut: true, Component: Home },
+//     { path: '/contacto', withLayOut: true, Component: Contact },
+// ]
 
 class App extends Component {
     state = {}
@@ -32,22 +33,14 @@ class App extends Component {
             <HandleError>
                 <IntlProvider locale={this.props.lang} messages={messages[this.props.lang]}>
                     <Router basename="/">
-                        {routes.map(({ path, Component }) => (
-                            <Route key={path} exact path={path}>
-                                {({ match }) => (
-                                    <CSSTransition
-                                        in={match != null}
-                                        timeout={300}
-                                        classNames="page"
-                                        unmountOnExit
-                                    >
-                                        <div className="page">
-                                            <Component />
-                                        </div>
-                                    </CSSTransition>
-                                )}
-                            </Route>
-                        ))}
+                        <Switch>
+                            {console.log(this.props)}
+                            <Page withLayOut={true} >
+                                <Route exact path="/" component={preHomes[randomCover]} />
+                                <Route path="/inicio" component={Home} />
+                                <Route path="/contacto" component={Contact} />
+                            </Page>
+                        </Switch>
                     </Router>
                 </IntlProvider>
             </HandleError>
@@ -56,9 +49,10 @@ class App extends Component {
 }
 
 function mapStateToProps(state, props) {
+    console.error(props)
     return {
         lang: state.locale.lang
     }
 }
 
-export default connect(mapStateToProps)(App);
+export default connect(mapStateToProps)(App)
