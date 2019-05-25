@@ -7,7 +7,7 @@ class AlertCookies extends React.Component {
     state = { acceptCookies: true }
     componentDidMount = () => {
         var _this = this;
-        localforage.getItem('acceptCookies', function (err, value) {
+        localforage.getItem('acceptCookies', (err, value) => {
             _this.setState({ acceptCookies: value === true });
         });
     }

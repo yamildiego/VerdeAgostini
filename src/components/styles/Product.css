@@ -1,0 +1,34 @@
+.Product {
+    cursor: pointer;
+    position: relative;
+    background: transparent;
+    text-align: center;
+    transition: all .6s ease-in;
+}
+
+.Product img {
+    width: 100%;
+    max-width: 237px;
+}
+
+.Product h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.Product:hover {
+    background: #00000055;
+}
+
+.ProductLink {
+    padding: 20%;
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 100%;
+    color: beige;
+}
+
+.Product:hover .ProductLink {
+    display: block;
+}

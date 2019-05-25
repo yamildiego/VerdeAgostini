@@ -1,10 +1,10 @@
 import { combineReducers } from "redux";
 import locale from "./locale";
 import contact from "./contact";
-import services from "./services";
+import info from "./info";
 
 export default combineReducers({
     locale,
     contact,
-    services
+    info
 });

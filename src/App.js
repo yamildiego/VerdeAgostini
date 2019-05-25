@@ -10,6 +10,7 @@ import Page from './components/pages/Page';
 import Contact from './components/pages/Contact';
 import AboutUs from './components/pages/AboutUs';
 import Products from './components/pages/Products';
+import CookiesPolicy from './components/pages/CookiesPolicy';
 import Home from './components/Home';
 import isset from './components/utilities/isset';
 import * as actions from './actions/locale';
@@ -39,6 +40,7 @@ class App extends Component {
                             <Route path="/productos/:paramsLang?" component={Products} />
                             <Route path="/nosotros/:paramsLang?" component={AboutUs} />
                             <Route path="/contacto/:paramsLang?" component={Contact} />
+                            <Route path="/politica-de-cookies/:paramsLang?" component={CookiesPolicy} />
                         </Page>
                     </Switch>
                 </IntlProvider>

@@ -4,7 +4,6 @@ import Logo from './../../assets/images/logox500.fw.png';
 import './styles/PreHomeOption.css';
 
 class PreHomeOption extends Component {
-    state = {}
     render() {
         return (
             <div className="PreHomeOption">
@@ -17,7 +16,7 @@ class PreHomeOption extends Component {
                         <p>no es solo la mejor opción.</p>
                         <p>Es nuestra única opción</p>
                     </div>
-                    <div className="w-100 text-center mt-5">
+                    <div className="w-100 text-center mt-4">
                         <Link to="/inicio" className="PreHomeOptionLink">Ingresar</Link>
                     </div>
                 </div>

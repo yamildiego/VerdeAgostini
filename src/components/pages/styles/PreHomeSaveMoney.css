@@ -50,9 +50,11 @@
         text-align: center;
     }
     .PreHomeSaveMoneyText {
+        padding-right: 0;
         text-align: center;
     }
     .PreHomeSaveMoneyEntry {
+        padding-right: 0;
         text-align: center;
     }
 }

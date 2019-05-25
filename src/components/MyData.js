@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
+import Constants from './../config';
 import './styles/MyData.css';
 
 class MyData extends Component {
@@ -15,25 +16,25 @@ class MyData extends Component {
                         <div className="input-group-prepend" style={{ paddingRight: "5px" }}>
                             <FontAwesomeIcon className="MyDataIcon" icon={['fab', 'whatsapp']} />
                         </div>
-                        <input type="text" className="form-control" placeholder="" defaultValue="+54 (3442) 965845" />
+                        <input type="text" className="form-control" placeholder="" defaultValue={Constants.number} />
                     </div>
                     <div className="input-group mb-3">
                         <div className="input-group-prepend" style={{ paddingRight: "5px" }}>
                             <FontAwesomeIcon className="MyDataIcon" icon="phone" />
                         </div>
-                        <input type="text" className="form-control" placeholder="" defaultValue="+54 (3442) 965845" />
+                        <input type="text" className="form-control" placeholder="" defaultValue={Constants.number} />
                     </div>
                     <div className="input-group mb-3">
                         <div className="input-group-prepend" style={{ paddingRight: "5px" }}>
                             <FontAwesomeIcon className="MyDataIcon" icon="at" />
                         </div>
-                        <input type="text" className="form-control" placeholder="" defaultValue="info@maildecontacto.com" />
+                        <input type="text" className="form-control" placeholder="" defaultValue={Constants.emailWebsite} />
                     </div>
                     <div className="input-group mb-3">
                         <div className="input-group-prepend" style={{ paddingRight: "5px" }}>
                             <FontAwesomeIcon className="MyDataIcon" icon="map-marker-alt" />
                         </div>
-                        <input type="text" className="form-control" placeholder="" defaultValue="Corrientes 239, Gualeguaychu, Entre Rios" />
+                        <input type="text" className="form-control" placeholder="" defaultValue={Constants.location} />
                     </div>
                 </div>
             </div>

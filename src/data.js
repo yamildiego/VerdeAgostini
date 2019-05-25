@@ -29,6 +29,36 @@ export default {
                 "image": require("./assets/images/paneles.jpg"),
                 "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, provident? Eius asperiores in itaque mollitia qui accusantium distinctio a dolores est."
             }
+        ],
+        products: [
+            {
+                "id": "1",
+                "name": "TERMOTANQUES SOLARES",
+                "nameTechnical": "TERMOTANQUES SOLARES",
+                "image": require('./assets/images/termotanques-solares.png'),
+                "description": "description"
+            },
+            {
+                "id": "2",
+                "name": "PANELES SOLARES",
+                "nameTechnical": "SISTEMAS FOTOVOLTAICOS",
+                "image": require('./assets/images/sistemas-fotovoltaicos.png'),
+                "description": "description"
+            },
+            {
+                "id": "3",
+                "name": "CLIMATIZACIÓN DE PISCINAS",
+                "nameTechnical": "COLECTORES PARA CLIMATIZACIÓN DE PISCINAS",
+                "image": require('./assets/images/colectores-para-piscinas.png'),
+                "description": "description"
+            },
+            {
+                "id": "4",
+                "name": "CLIMATIZACIÓN DE PISCINAS",
+                "nameTechnical": "COLECTORES PARA CLIMATIZACIÓN DE PISCINAS",
+                "image": require('./assets/images/colectores-para-piscinas.png'),
+                "description": "description"
+            }
         ]
     },
     "en": {

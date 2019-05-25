@@ -1,6 +1,7 @@
 body {
     background: #F2F4F1;
     overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
 }
 
 *::selection {

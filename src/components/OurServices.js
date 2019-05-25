@@ -24,7 +24,7 @@ class OurServices extends Component {
 
 function mapStateToProps(state, props) {
     return {
-        services: state.services[state.locale.lang].services
+        services: state.info[state.locale.lang].services
     }
 }
 
