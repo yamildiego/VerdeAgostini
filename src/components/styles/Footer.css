@@ -6,45 +6,6 @@
     justify-content: space-between;
 }
 
-.Footer svg {
-    font-size: 30px;
-}
-
-.FooterBtnLink {
-    border-radius: 40px;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    transition: all 0.6s
-}
-
-.FoterW {
-    background: #00e676;
-    line-height: 45px;
-}
-
-.FooterF {
-    background: #3b5998;
-    line-height: 40px;
-}
-
-.FooterI {
-    background: #f09433;
-    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
-    line-height: 50px;
-}
-
-.FooterF svg {
-    font-size: 20px!important;
-}
-
-.FooterBtnLink:hover {
-    box-shadow: 0 0 10px #444;
-}
-
 .YD {
     line-height: 96px;
     font-size: 12px;
@@ -59,10 +20,6 @@
 .FooterText {
     font-size: 20px;
     line-height: 96px;
-}
-
-.FooterRedesSociales {
-    padding: 20px 5px;
 }
 
 @media only screen and (max-width: 1200px) {

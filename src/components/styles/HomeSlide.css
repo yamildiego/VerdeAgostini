@@ -1,6 +1,7 @@
 .HomeSlide {
     background-image: url("./../../assets/images/OIH9JD02.jpg");
-    height: 620px;
+    min-height: 620px;
+    height: 100%;
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -9,21 +10,8 @@
     transition: background-image 0.2s ease-in-out;
 }
 
-.HomeSlideBody {
-    height: 100%;
-    padding-top: 10%;
-    text-align: center;
-}
-
-.HomeSlideLeft {
-    background: #FFFFFF66;
-    height: 100%;
-    width: 50%;
-    padding: 70px;
-}
-
-@media only screen and (max-width: 768px) {
-    .HomeSlide {
-        background-attachment: scroll;
-    }
+.HomeSlide img {
+    padding: 10px;
+    max-width: 350px;
+    width: 100%;
 }

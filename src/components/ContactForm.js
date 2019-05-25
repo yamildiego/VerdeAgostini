@@ -119,11 +119,13 @@ class ContactForm extends React.Component {
                         this.props.message.text !== '' && this.props.message.type === 'ERROR' &&
                         <p className="alert alert-danger">{this.props.message.text}</p>
                     }
-                    <button
-                        type="submit"
-                        className="btn btn-success text-white">
-                        <FormattedMessage locale={this.props.lang} id="contact.form.send" />
-                    </button>
+                    <div className="d-flex justify-content-end">
+                        <button
+                            type="submit"
+                            className="btn btn-success text-white">
+                            <FormattedMessage locale={this.props.lang} id="contact.form.send" />
+                        </button>
+                    </div>
                 </form>
             </React.Fragment>
         )
