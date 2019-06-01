@@ -17,7 +17,7 @@
 }
 
 .Product:hover {
-    background: #00000055;
+    background: #000000AA;
 }
 
 .ProductLink {
@@ -26,7 +26,8 @@
     display: none;
     height: 100%;
     width: 100%;
-    color: beige;
+    color: white;
+    font-weight: bold;
 }
 
 .Product:hover .ProductLink {

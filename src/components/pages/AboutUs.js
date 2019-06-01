@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
-import AboutUsImage from './../../assets/images/home-casco.jpg';
-
-import './styles/AboutUs.css';
+import AboutUsImage from './../../assets/images/about-us.jpg';
 
 class AboutUs extends Component {
     render() {

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import DrawerToggleButton from './DrawerToggleButton';
 import ChangeLanguage from './../ChangeLanguage';
 import { FormattedMessage } from 'react-intl';
-import Logo from './../../assets/images/logox500.fw.png';
+import Logo from './../../assets/images/logo.png';
 import { connect } from 'react-redux';
 import './styles/NavBar.css';
 
@@ -16,7 +16,7 @@ class NavBar extends React.Component {
         document.removeEventListener('scroll', this.checkScroll);
     }
     checkScroll = () => {
-        const isTop = window.scrollY < 100;
+        const isTop = window.scrollY < 30;
         if (isTop !== this.state.isTop) this.setState({ isTop })
     }
     render() {
