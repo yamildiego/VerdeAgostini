@@ -1,13 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'jquery';
-import 'popper.js';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
-
-import './index.css';
-import './assets/fonts/fonts.css';
-
-import 'bootstrap';
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { addLocaleData } from 'react-intl';
@@ -31,6 +21,10 @@ import {
     faSun, faVial, faVolumeMute, faFileAlt,
     faHeart, faCommentDollar, faCloudShowersHeavy
 } from '@fortawesome/free-solid-svg-icons';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
+import './assets/fonts/fonts.css';
 
 library.add(fab, faWhatsapp, faFacebookF, faInstagram,
     faTimes, faHome, faCheck, faSpinner,
