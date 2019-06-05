@@ -30,9 +30,9 @@ class NavBar extends React.Component {
                             </div>
                             <div className="col-lg-2 col-4 text-center">
                                 <div className="LogoMenu">
-                                    <Link to="/">
+                                    <a href="/inicio">
                                         <img src={Logo} alt="Verde Agostini" />
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                             <div className="col-lg-5 col-4">
