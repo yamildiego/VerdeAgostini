@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
-import Tap from './../assets/images/tap.jpg';
+import Tap from './../assets/images/tap.webp';
 import './styles/Section.css';
 
 const icons = [

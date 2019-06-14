@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import Product from './../Product';
 import ModalContainer from './../ModalContainer';
 import Modal from './../Modal';
+import Page from './Page';
 import ViewProduct from './../ViewProduct';
 
 class Products extends Component {
@@ -19,23 +20,25 @@ class Products extends Component {
     closeModal = () => this.setState({ modalVisible: false })
     render() {
         return (
-            <div className="container" style={{ paddingTop: "120px" }}>
-                <div className="row">
+            <Page>
+                <div className="container" style={{ paddingTop: "120px" }}>
+                    <div className="row">
+                        {
+                            this.props.products.map(item => {
+                                return <Product openModalUpdate={this.openModalUpdate} key={item.id} {...item} />
+                            })
+                        }
+                    </div>
                     {
-                        this.props.products.map(item => {
-                            return <Product openModalUpdate={this.openModalUpdate} key={item.id} {...item} />
-                        })
+                        this.state.modalVisible &&
+                        <ModalContainer>
+                            <Modal closeModal={this.closeModal}>
+                                <ViewProduct {...this.state.productSelected} />
+                            </Modal>
+                        </ModalContainer>
                     }
                 </div>
-                {
-                    this.state.modalVisible &&
-                    <ModalContainer>
-                        <Modal closeModal={this.closeModal}>
-                            <ViewProduct {...this.state.productSelected} />
-                        </Modal>
-                    </ModalContainer>
-                }
-            </div>
+            </Page>
         );
     }
 }

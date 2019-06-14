@@ -3,27 +3,30 @@ import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 import ContactForm from './../ContactForm';
 import MyData from './../MyData';
-import ContactImage from './../../assets/images/contact.jpg';
+import ContactImage from './../../assets/images/contact.webp';
 import './styles/Contact.css';
+import Page from './Page';
 
 const Contact = (props) => (
-    <div style={{ paddingTop: "100px" }}>
-        <h1 className="text-center">
-            <FormattedMessage locale={props.lang} id="contact.title" />
-        </h1>
-        <p className="text-center ContactSubtitle">
-            <FormattedMessage locale={props.lang} id="contact.subtitle" />
-        </p>
-        <div className="row">
-            <div className="col-lg-6 pl-0 pr-0">
-                <img src={ContactImage} alt="" className="w-100" />
+    <Page>
+        <div style={{ paddingTop: "100px" }}>
+            <h1 className="text-center">
+                <FormattedMessage locale={props.lang} id="contact.title" />
+            </h1>
+            <p className="text-center ContactSubtitle">
+                <FormattedMessage locale={props.lang} id="contact.subtitle" />
+            </p>
+            <div className="row">
+                <div className="col-lg-6 pl-0 pr-0">
+                    <img src={ContactImage} alt="" className="w-100" />
+                </div>
+                <div className="col-lg-6 bg-white">
+                    <MyData />
+                </div>
             </div>
-            <div className="col-lg-6 bg-white">
-                <MyData />
-            </div>
+            <ContactForm />
         </div>
-        <ContactForm />
-    </div>
+    </Page>
 )
 
 
