@@ -1,3 +1,7 @@
+.ProductContainer {
+    background: white;
+}
+
 .Product {
     cursor: pointer;
     position: relative;

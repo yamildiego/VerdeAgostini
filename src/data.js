@@ -1,38 +1,12 @@
 export default {
     "es": {
-        "services": [
+        products: [
             {
                 "id": "1",
                 "title": "Termotanques",
                 "subtitle": "Asesoramiento e instalaciones",
-                "image": require("./assets/images/termotanque.webp"),
-                "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, provident? Eius asperiores in itaque mollitia qui accusantium distinctio a dolores est."
-            },
-            {
-                "id": "2",
-                "title": "Luminarias led",
-                "subtitle": "Expertos en campos de juego",
-                "image": require("./assets/images/stadium.webp"),
-                "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, provident? Eius asperiores in itaque mollitia qui accusantium distinctio a dolores est."
-            },
-            {
-                "id": "3",
-                "title": "Piscinas",
-                "subtitle": "Climatización solar",
-                "image": require("./assets/images/piscinas.webp"),
-                "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, provident? Eius asperiores in itaque mollitia qui accusantium distinctio a dolores est."
-            },
-            {
-                "id": "4",
-                "title": "Paneles solares",
-                "subtitle": "Servicio de instalacion",
-                "image": require("./assets/images/paneles.webp"),
-                "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, provident? Eius asperiores in itaque mollitia qui accusantium distinctio a dolores est."
-            }
-        ],
-        products: [
-            {
-                "id": "1",
+                "imageHome": require("./assets/images/termotanque.webp"),
+                "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, provident? Eius asperiores in itaque mollitia qui accusantium distinctio a dolores est.",
                 "name": "TERMOTANQUES SOLARES",
                 "nameTechnical": "TERMOTANQUES SOLARES",
                 "image": require('./assets/images/termotanques-solares.webp'),
@@ -41,15 +15,22 @@ export default {
             },
             {
                 "id": "2",
-                "name": "PANELES SOLARES",
-                "nameTechnical": "SISTEMAS FOTOVOLTAICOS",
-                "image": require('./assets/images/sistemas-fotovoltaicos.webp'),
-                "descriptionone": "Un sistema fotovoltaico es un conjunto de dispositivos que aprovechan la energía producida por el sol y la convierten en energía eléctrica.",
-                "descriptiontwo": "Los sistemas fotovoltaicos se basan en la capacidad de las celdas fotovoltaicas de transformar energía solar en energía eléctrica (DC). En un sistema conectado a la red eléctrica esta energía, mediante el uso de un inversor, es transformada a corriente alterna (AC), la cual puede ser utilizada en hogares e industrias.",
-                "descriptionthree": "La generación de energía eléctrica dependerá de las horas que el sol brille sobre el panel solar y del tipo y cantidad de módulos instalados, orientación, inclinación, radiación solar que les llegue, calidad de la instalación y la potencia nominal."
+                "title": "Luminarias led",
+                "subtitle": "Expertos en campos de juego",
+                "imageHome": require("./assets/images/stadium.webp"),
+                "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, provident? Eius asperiores in itaque mollitia qui accusantium distinctio a dolores est.",
+                "name": "LUMINARIAS LED",
+                "nameTechnical": "ILUMINACIÓN LED",
+                "image": require('./assets/images/led.webp'),
+                "descriptionone": "Debido a la enorme reducción energética, la mínima emisión de calor, el poco mantenimiento necesario y la larga vida útil, las luces LED han demostrado que proporcionan el mejor rendimiento en los análisis de costo-beneficio.",
+                "descriptiontwo": "Contamos con un equipo técnico capacitado para el dimensionamiento de alumbrado LED en espacios como: jardines, salones, estadios, estacionamientos, entre otros."
             },
             {
                 "id": "3",
+                "title": "Piscinas",
+                "subtitle": "Climatización solar",
+                "imageHome": require("./assets/images/piscinas.webp"),
+                "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, provident? Eius asperiores in itaque mollitia qui accusantium distinctio a dolores est.",
                 "name": "CLIMATIZACIÓN DE PISCINAS",
                 "nameTechnical": "COLECTORES PARA CLIMATIZACIÓN DE PISCINAS",
                 "image": require('./assets/images/colectores-para-piscinas.webp'),
@@ -58,11 +39,16 @@ export default {
             },
             {
                 "id": "4",
-                "name": "LUMINARIAS LED",
-                "nameTechnical": "ILUMINACIÓN LED",
-                "image": require('./assets/images/led.webp'),
-                "descriptionone": "Debido a la enorme reducción energética, la mínima emisión de calor, el poco mantenimiento necesario y la larga vida útil, las luces LED han demostrado que proporcionan el mejor rendimiento en los análisis de costo-beneficio.",
-                "descriptiontwo": "Contamos con un equipo técnico capacitado para el dimensionamiento de alumbrado LED en espacios como: jardines, salones, estadios, estacionamientos, entre otros."
+                "title": "Paneles solares",
+                "subtitle": "Servicio de instalacion",
+                "imageHome": require("./assets/images/paneles.webp"),
+                "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, provident? Eius asperiores in itaque mollitia qui accusantium distinctio a dolores est.",
+                "name": "PANELES SOLARES",
+                "nameTechnical": "SISTEMAS FOTOVOLTAICOS",
+                "image": require('./assets/images/sistemas-fotovoltaicos.webp'),
+                "descriptionone": "Un sistema fotovoltaico es un conjunto de dispositivos que aprovechan la energía producida por el sol y la convierten en energía eléctrica.",
+                "descriptiontwo": "Los sistemas fotovoltaicos se basan en la capacidad de las celdas fotovoltaicas de transformar energía solar en energía eléctrica (DC). En un sistema conectado a la red eléctrica esta energía, mediante el uso de un inversor, es transformada a corriente alterna (AC), la cual puede ser utilizada en hogares e industrias.",
+                "descriptionthree": "La generación de energía eléctrica dependerá de las horas que el sol brille sobre el panel solar y del tipo y cantidad de módulos instalados, orientación, inclinación, radiación solar que les llegue, calidad de la instalación y la potencia nominal."
             }
         ]
     },

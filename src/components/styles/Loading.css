@@ -2,7 +2,7 @@
     position: fixed;
     width: 100%;
     margin: 0;
-    background: #ffd7d7b5;
+    background: #d7ffe2b5;
     padding: 7rem;
     text-align: center;
     left: 0;
@@ -12,6 +12,6 @@
 }
 
 .Loading .fa-spinner {
-    color: #e94f51;
+    color: #2f8519;
     font-size: 70px;
 }

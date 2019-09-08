@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
+import { FormattedMessage } from 'react-intl';
 import Service from './Service';
 
 class OurServices extends Component {
@@ -12,8 +12,12 @@ class OurServices extends Component {
                 </h1>
                 <div className="row">
                     {
-                        this.props.services.map(item => {
-                            return <Service key={item.id} {...item} />
+                        this.props.products.map(item => {
+                            return <Service
+                                handleClickSeeMore={() => this.props.handleClickSeeMore(item)}
+                                handleClickSeeMoreClose={this.handleClickSeeMoreClose}
+                                key={item.id} {...item}
+                            />
                         })
                     }
                 </div>
@@ -24,7 +28,7 @@ class OurServices extends Component {
 
 function mapStateToProps(state, props) {
     return {
-        services: state.info[state.locale.lang].services
+        products: state.info[state.locale.lang].products
     }
 }
 
