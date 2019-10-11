@@ -1,7 +1,7 @@
 import { LOCALE_SET, IS_LOADING, SET_MESSAGE, SHOW_ERRORS, UPDATE_FORM } from "../reducers/types";
 import Constants from './../config';
 import queryString from 'querystring';
-// import isset from './../components/utilities/isset';
+import isset from './../components/utilities/isset';
 
 export const localeSet = lang => ({
     type: LOCALE_SET,
