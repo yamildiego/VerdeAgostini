@@ -1,26 +1,26 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import Logo from './../../assets/images/logo.png';
-import './styles/PreHomeInvesment.css';
+import './styles/PreHomeFreeEnergy.css';
 
-class PreHomeInvesment extends Component {
+class PreHomeFreeEnergy extends Component {
     render() {
         return (
-            <div className="PreHomeInvesment">
+            <div className="PreHomeFreeEnergy">
                 <div className="d-flex justify-content-between h-100">
-                    <div className="w-50 PreHomeInvesmentBg">
+                    <div className="w-50 PreHomeFreeEnergyBg">
                         <div className="d-flex flex-column justify-content-center h-100">
-                            <div className="PreHomeInvesmentLogoText">
-                                No es un gasto es una inversión
+                            <div className="PreHomeFreeEnergyLogoText">
+                                Energía limpia, gratis e inagotable.
                             </div>
                         </div>
                     </div>
-                    <div className="PreHomeInvesmentLogo w-50 text-center h-100 bg-light">
+                    <div className="PreHomeFreeEnergyLogo w-50 text-center h-100 bg-light">
                         <div className="d-flex flex-column justify-content-center h-100">
                             <div>
                                 <img src={Logo} alt="Verde Agostini" />
                             </div>
-                            <div className="PreHomeInvesmentLogoEntry">
+                            <div className="PreHomeFreeEnergyLogoEntry">
                                 <Link to="/inicio">Ingresar</Link>
                             </div>
                         </div>
@@ -31,4 +31,4 @@ class PreHomeInvesment extends Component {
     }
 }
 
-export default PreHomeInvesment;
+export default PreHomeFreeEnergy;

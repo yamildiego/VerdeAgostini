@@ -1,41 +1,42 @@
-.PreHomeInvesment {
+.PreHomeFreeEnergy {
     position: fixed;
     height: 100%;
     width: 100%;
 }
 
-.PreHomeInvesment img {
+.PreHomeFreeEnergy img {
     width: 100%;
     max-width: 400px;
     padding: 2rem;
 }
 
-.PreHomeInvesmentLogoText {
+.PreHomeFreeEnergyLogoText {
     font-family: 'Cabin Sketch', cursive;
     font-size: 30px;
     color: #fff;
     text-shadow: 1px 1px 0 #000;
     text-align: center;
+    padding-top: 115px;
 }
 
-.PreHomeInvesmentLogoEntry {
+.PreHomeFreeEnergyLogoEntry {
     font-family: 'SprayPaint';
     font-size: 30px;
     text-align: center;
     text-shadow: 0px 1px 1px #fff;
 }
 
-.PreHomeInvesmentLogoEntry a {
+.PreHomeFreeEnergyLogoEntry a {
     color: #000;
 }
 
-.PreHomeInvesmentLogoEntry a:hover {
+.PreHomeFreeEnergyLogoEntry a:hover {
     color: #000;
     text-decoration: none;
 }
 
-.PreHomeInvesmentBg {
-    background: url("./../../../assets/images/investment.webp");
+.PreHomeFreeEnergyBg {
+    background: url("./../../../assets/images/free.webp");
     background-repeat: no-repeat;
     background-size: cover;
 }

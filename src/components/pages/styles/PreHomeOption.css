@@ -21,6 +21,8 @@
 }
 
 .PreHomeOptionLogo img {
+    background: white;
+    padding: 20px;
     width: 250px;
 }
 

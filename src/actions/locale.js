@@ -40,27 +40,18 @@ export const sendFormAsync = form => {
                     'Content-Type': 'application/x-www-form-urlencoded',
                     'Accept': 'application/json'
                 }
-            }).then(result => result.text())
-                .then(data => console.log(data))
-            // }).then(response => {
-            //     console.warn(response)
-            //     // if (isJson(response)) {
-            //     // console.error("OK");
-            //     // } else {
-            //     // console.error("NOOK");
-            //     // }
-            // })
-            // }).then(response => response.json())
-            // .then(response => {
-            //     if (response.status)
-            //         if (isset(response.errors))
-            //             dispatch(setMessange("Ups ha ocurrido un error, contacte al administrador del sistema.", "ERROR"));
-            //         else
-            //             dispatch(setMessange("La consulta se envio con éxito, te responderemos a la brevedad.", "OK"));
-            //     else
-            //         dispatch(setMessange("Ups ha ocurrido un error en nuestros servidor, contacte al administrador del sistema.", "ERROR"));
-            //     dispatch(isLoading(false));
-            // });
+            })
+                .then(response => response.json())
+                .then(response => {
+                    if (response.status)
+                        if (isset(response.errors))
+                            dispatch(setMessange("Ups ha ocurrido un error, contacte al administrador del sistema.", "ERROR"));
+                        else
+                            dispatch(setMessange("La consulta se envio con éxito, te responderemos a la brevedad.", "OK"));
+                    else
+                        dispatch(setMessange("Ups ha ocurrido un error en nuestros servidor, contacte al administrador del sistema.", "ERROR"));
+                    dispatch(isLoading(false));
+                });
         }
     }
 };

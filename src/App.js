@@ -20,10 +20,10 @@ addLocaleData([...en, ...es])
 const preHomes = {
     0: './components/pages/PreHomeSaveMoney',
     1: './components/pages/PreHomeOption',
-    2: './components/pages/PreHomeInvesment'
+    2: './components/pages/PreHomeFreeEnergy'
 }
 const randomCover = Math.floor(Math.random() * 3);
-
+    
 let MyComponent = Loadable({
     loader: () => import(`${preHomes[randomCover]}`),
     loading: () => <div>Loading...</div>

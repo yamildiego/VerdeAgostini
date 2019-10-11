@@ -27,6 +27,7 @@ class AboutUs extends Component {
                             <p className="text-justify p-3">
                                 <FormattedMessage locale={this.props.lang} id="aboutus.paragraphtwo" />
                             </p>
+                            <p className="text-right">Daniel Martín Agostini Becker.</p>
                         </div>
                     </div>
                 </div>

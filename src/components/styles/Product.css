@@ -13,6 +13,7 @@
 .Product img {
     width: 100%;
     max-width: 237px;
+    max-height: 187px;
 }
 
 .Product h3 {
