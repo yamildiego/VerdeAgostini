@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import { FormattedMessage } from 'react-intl';
+import { connect } from 'react-redux';
 import { Link } from "react-router-dom";
 import Logo from './../../assets/images/logo.png';
 import './styles/PreHomeSaveMoney.css';
 
 class PreHomeSaveMoney extends Component {
-    state = {}
     render() {
         return (
             <div className="PreHomeSaveMoney">
@@ -12,15 +13,27 @@ class PreHomeSaveMoney extends Component {
                     <img src={Logo} alt="Verde Agostini" />
                 </div>
                 <div className="PreHomeSaveMoneyText">
-                    <p>Ahorrar no es solo guardar</p>
-                    <p>sino saber gastar.</p>
+                    <p>
+                        <FormattedMessage locale={this.props.lang} id="PreHomeSaveMoney.textOne" />
+                    </p>
+                    <p>
+                        <FormattedMessage locale={this.props.lang} id="PreHomeSaveMoney.textTwo" />
+                    </p>
                 </div>
                 <div className="PreHomeSaveMoneyEntry">
-                    <Link to="/inicio" className="PreHomeSaveMoneyLink">Ingresar</Link>
+                    <Link to="/inicio" className="PreHomeSaveMoneyLink">
+                        <FormattedMessage locale={this.props.lang} id="prehome.enter" />
+                    </Link>
                 </div>
             </div>
         );
     }
 }
 
-export default PreHomeSaveMoney;
+function mapStateToProps(state, props) {
+    return {
+        lang: state.locale.lang
+    }
+}
+
+export default connect(mapStateToProps)(PreHomeSaveMoney);

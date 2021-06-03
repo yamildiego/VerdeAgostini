@@ -2,6 +2,13 @@ let yearActual = new Date().getFullYear();
 
 export default {
     en: {
+        "prehome.enter": "Enter",
+        "PreHomeFreeEnergy.textOne": "Clean, free and inexhaustible energy.",
+        "PreHomeOption.textOne": "Switching to renewable energy",
+        "PreHomeOption.textTwo": "is not only the best option.",
+        "PreHomeOption.textThree": "It's our only option",
+        "PreHomeSaveMoney.textOne": "Saving is also knowing",
+        "PreHomeSaveMoney.textTwo": "how to spend",
         "nav.home": "Home",
         "nav.products": "Products",
         "nav.about": "About us",
@@ -36,6 +43,13 @@ export default {
         "footer.copyright": "© " + yearActual + " VerdeAgostini - All rights reserved."
     },
     es: {
+        "prehome.enter": "Ingresar",
+        "PreHomeFreeEnergy.textOne": "Energía limpia, gratis e inagotable.",
+        "PreHomeOption.textOne": "Cambiar a energías renovables,",
+        "PreHomeOption.textTwo": "no es solo la mejor opción.",
+        "PreHomeOption.textThree": "Es nuestra única opción",
+        "PreHomeSaveMoney.textOne": "Ahorrar no es solo guardar",
+        "PreHomeSaveMoney.textTwo": "sino saber gastar.",
         "nav.home": "Inicio",
         "nav.products": "Productos",
         "nav.about": "Nosotros",

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { FormattedMessage } from 'react-intl';
+import { connect } from 'react-redux';
 import { Link } from "react-router-dom";
 import Logo from './../../assets/images/logo.png';
 import './styles/PreHomeFreeEnergy.css';
@@ -11,7 +13,7 @@ class PreHomeFreeEnergy extends Component {
                     <div className="w-50 PreHomeFreeEnergyBg">
                         <div className="d-flex flex-column justify-content-center h-100">
                             <div className="PreHomeFreeEnergyLogoText">
-                                Energía limpia, gratis e inagotable.
+                                <FormattedMessage locale={this.props.lang} id="PreHomeFreeEnergy.textOne" />
                             </div>
                         </div>
                     </div>
@@ -21,7 +23,9 @@ class PreHomeFreeEnergy extends Component {
                                 <img src={Logo} alt="Verde Agostini" />
                             </div>
                             <div className="PreHomeFreeEnergyLogoEntry">
-                                <Link to="/inicio">Ingresar</Link>
+                                <Link to="/inicio">
+                                    <FormattedMessage locale={this.props.lang} id="prehome.enter" />
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -31,4 +35,10 @@ class PreHomeFreeEnergy extends Component {
     }
 }
 
-export default PreHomeFreeEnergy;
+function mapStateToProps(state, props) {
+    return {
+        lang: state.locale.lang
+    }
+}
+
+export default connect(mapStateToProps)(PreHomeFreeEnergy);

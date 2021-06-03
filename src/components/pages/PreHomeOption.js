@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { FormattedMessage } from 'react-intl';
+import { connect } from 'react-redux';
 import { Link } from "react-router-dom";
 import Logo from './../../assets/images/logo.png';
 import './styles/PreHomeOption.css';
@@ -12,12 +14,20 @@ class PreHomeOption extends Component {
                         <img src={Logo} alt="Verde Agostini" />
                     </div>
                     <div className="PreHomeOptionText">
-                        <p>Cambiar a energías renovables,</p>
-                        <p>no es solo la mejor opción.</p>
-                        <p>Es nuestra única opción</p>
+                        <p>
+                            <FormattedMessage locale={this.props.lang} id="PreHomeOption.textOne" />
+                        </p>
+                        <p>
+                            <FormattedMessage locale={this.props.lang} id="PreHomeOption.textTwo" />
+                        </p>
+                        <p>
+                            <FormattedMessage locale={this.props.lang} id="PreHomeOption.textThree" />
+                        </p>
                     </div>
                     <div className="w-100 text-center mt-4">
-                        <Link to="/inicio" className="PreHomeOptionLink">Ingresar</Link>
+                        <Link to="/inicio" className="PreHomeOptionLink">
+                            <FormattedMessage locale={this.props.lang} id="prehome.enter" />
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -25,4 +35,10 @@ class PreHomeOption extends Component {
     }
 }
 
-export default PreHomeOption;
+function mapStateToProps(state, props) {
+    return {
+        lang: state.locale.lang
+    }
+}
+
+export default connect(mapStateToProps)(PreHomeOption);
