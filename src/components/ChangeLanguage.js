@@ -1,10 +1,14 @@
 import React from 'react';
+import localforage from 'localforage';
 import { connect } from 'react-redux';
 import * as actions from '../actions/locale';
 import './styles/ChangeLanguage.css';
 
 class ChangeLanguage extends React.PureComponent {
-    handleLocaleSet = (lang) => this.props.dispatch(actions.localeSet(lang));
+    handleLocaleSet = (lang) => {
+        localforage.setItem('lang', lang);
+        this.props.dispatch(actions.localeSet(lang))
+    }
     render() {
         return (
             <div className={this.props.className ? ("ChangeLanguage " + this.props.className) : "ChangeLanguage"}>

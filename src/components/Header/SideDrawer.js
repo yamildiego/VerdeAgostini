@@ -18,22 +18,22 @@ class SideDrawer extends React.PureComponent {
             <nav className={drawerClasses}>
                 <ul>
                     <li>
-                        <Link to={(this.props.lang === "es") ? `/inicio` : `/inicio/${this.props.lang}`} onClick={this.handleClick}>
+                        <Link to={(this.props.lang === "es") ? `/inicio` : `/inicio`} onClick={this.handleClick}>
                             <FormattedMessage locale={this.props.lang} id="nav.home" />
                         </Link>
                     </li>
                     <li>
-                        <Link to={(this.props.lang === "es") ? `/productos` : `/productos/${this.props.lang}`} onClick={this.handleClick}>
+                        <Link to={(this.props.lang === "es") ? `/productos` : `/productos`} onClick={this.handleClick}>
                             <FormattedMessage locale={this.props.lang} id="nav.products" />
                         </Link>
                     </li>
                     <li>
-                        <Link to={(this.props.lang === "es") ? `/nosotros` : `/nosotros/${this.props.lang}`} onClick={this.handleClick}>
+                        <Link to={(this.props.lang === "es") ? `/nosotros` : `/nosotros`} onClick={this.handleClick}>
                             <FormattedMessage locale={this.props.lang} id="nav.about" />
                         </Link>
                     </li>
                     <li>
-                        <Link to={(this.props.lang === "es") ? `/contacto` : `/contacto/${this.props.lang}`} onClick={this.handleClick}>
+                        <Link to={(this.props.lang === "es") ? `/contacto` : `/contacto`} onClick={this.handleClick}>
                             <FormattedMessage locale={this.props.lang} id="nav.contact" />
                         </Link>
                     </li>

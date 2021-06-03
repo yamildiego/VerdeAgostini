@@ -41,22 +41,22 @@ class NavBar extends React.Component {
                             <div className="col-5 d-none d-lg-block d-xl-block">
                                 <ul className="Menu">
                                     <li>
-                                        <Link to={(this.props.lang === "es") ? `/inicio` : `/inicio/${this.props.lang}`}>
+                                        <Link to={(this.props.lang === "es") ? `/inicio` : `/inicio`}>
                                             <FormattedMessage locale={this.props.lang} id="nav.home" />
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to={(this.props.lang === "es") ? `/productos` : `/productos/${this.props.lang}`}>
+                                        <Link to={(this.props.lang === "es") ? `/productos` : `/productos`}>
                                             <FormattedMessage locale={this.props.lang} id="nav.products" />
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to={(this.props.lang === "es") ? `/nosotros` : `/nosotros/${this.props.lang}`}>
+                                        <Link to={(this.props.lang === "es") ? `/nosotros` : `/nosotros`}>
                                             <FormattedMessage locale={this.props.lang} id="nav.about" />
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to={(this.props.lang === "es") ? `/contacto` : `/contacto/${this.props.lang}`}>
+                                        <Link to={(this.props.lang === "es") ? `/contacto` : `/contacto`}>
                                             <FormattedMessage locale={this.props.lang} id="nav.contact" />
                                         </Link>
                                     </li>

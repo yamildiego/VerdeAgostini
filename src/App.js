@@ -9,11 +9,12 @@ import AboutUs from './components/pages/AboutUs';
 import Products from './components/pages/Products';
 import CookiesPolicy from './components/pages/CookiesPolicy';
 import Home from './components/Home';
-import isset from './components/utilities/isset';
 import * as actions from './actions/locale';
 import messages from './lang';
 import es from 'react-intl/locale-data/es';
 import en from 'react-intl/locale-data/en';
+import lenguanges from './lang';
+import localforage from 'localforage';
 
 addLocaleData([...en, ...es])
 
@@ -23,7 +24,7 @@ const preHomes = {
     2: './components/pages/PreHomeFreeEnergy'
 }
 const randomCover = Math.floor(Math.random() * 3);
-    
+
 let MyComponent = Loadable({
     loader: () => import(`${preHomes[randomCover]}`),
     loading: () => <div>Loading...</div>
@@ -31,8 +32,17 @@ let MyComponent = Loadable({
 
 class App extends Component {
     componentDidMount = () => {
-        if (this.props.lang !== this.props.langParam)
-            this.props.dispatch(actions.localeSet(this.props.langParam));
+        localforage.getItem('lang', (err, langLocalForage) => {
+            let lang = "en";
+            if (langLocalForage == null) {
+                let navigatorLanguage = navigator.language.split("-")[0];
+                if (navigatorLanguage !== undefined && Object.keys(lenguanges).includes(navigatorLanguage))
+                    lang = navigatorLanguage;
+            } else
+                if (Object.keys(lenguanges).includes(langLocalForage)) lang = langLocalForage;
+
+            this.props.dispatch(actions.localeSet(lang))
+        });
     }
     render() {
         return (
@@ -40,11 +50,11 @@ class App extends Component {
                 <IntlProvider locale={this.props.lang} messages={messages[this.props.lang]}>
                     <Switch>
                         <Route exact path="/" render={() => <MyComponent />} />
-                        <Route path="/inicio/:paramsLang?" component={Home} />
-                        <Route path="/productos/:paramsLang?" component={Products} />
-                        <Route path="/nosotros/:paramsLang?" component={AboutUs} />
-                        <Route path="/contacto/:paramsLang?" component={Contact} />
-                        <Route path="/politica-de-cookies/:paramsLang?" component={CookiesPolicy} />
+                        <Route path="/inicio" component={Home} />
+                        <Route path="/productos" component={Products} />
+                        <Route path="/nosotros" component={AboutUs} />
+                        <Route path="/contacto" component={Contact} />
+                        <Route path="/politica-de-cookies" component={CookiesPolicy} />
                     </Switch>
                 </IntlProvider>
             </HandleError>
@@ -53,13 +63,8 @@ class App extends Component {
 }
 
 function mapStateToProps(state, props) {
-    let elements = props.history.location.pathname.split("/");
-    let langParam = state.locale.lang;
-    if (isset(elements[2]) && (elements[2] === "es" || elements[2] === "en"))
-        langParam = elements[2];
     return {
         lang: state.locale.lang,
-        langParam,
         location: props.location.pathname
     }
 }
