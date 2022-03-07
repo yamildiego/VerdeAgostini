@@ -1,40 +1,41 @@
 .ProductContainer {
-    background: white;
+  background: white;
+  margin-bottom: 25px;
 }
 
 .Product {
-    cursor: pointer;
-    position: relative;
-    background: transparent;
-    text-align: center;
-    transition: all .6s ease-in;
+  cursor: pointer;
+  position: relative;
+  background: transparent;
+  text-align: center;
+  transition: all 0.6s ease-in;
 }
 
 .Product img {
-    width: 100%;
-    max-width: 237px;
-    max-height: 187px;
+  width: 100%;
+  max-width: 237px;
+  max-height: 187px;
 }
 
 .Product h3 {
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
 }
 
 .Product:hover {
-    background: #000000AA;
+  background: #000000aa;
 }
 
 .ProductLink {
-    padding: 20%;
-    position: absolute;
-    display: none;
-    height: 100%;
-    width: 100%;
-    color: white;
-    font-weight: bold;
+  padding: 20%;
+  position: absolute;
+  display: none;
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-weight: bold;
 }
 
 .Product:hover .ProductLink {
-    display: block;
+  display: block;
 }

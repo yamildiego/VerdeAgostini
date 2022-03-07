@@ -1,81 +1,81 @@
-.NavBar>* {
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+.NavBar > * {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .NavBar {
-    z-index: 100;
-    background: transparent;
-    transition: all 0.6s ease, border 0.2s ease;
+  z-index: 100;
+  background: transparent;
+  transition: all 0.6s ease, border 0.2s ease;
 }
 
 .NavBarMenu {
-    margin: auto;
-    max-width: 1140px;
+  margin: auto;
+  max-width: 1140px;
 }
 
 .NavBarTop {
-    height: 100px;
+  height: 100px;
 }
 
 .NavBarTop .LogoMenu img {
-    margin: 10px;
-    width: 100%;
-    max-width: 145px;
-    transition: all 0.6s ease, border 0.2s ease;
+  margin: 10px;
+  width: 100%;
+  max-width: 145px;
+  transition: all 0.6s ease, border 0.2s ease;
 }
 
 .NavBarTop .Menu li a {
-    line-height: 100px;
+  line-height: 100px;
 }
 
 .NavBarTop .NavBarBtnMenu {
-    padding: 38px 20px;
+  padding: 38px 20px;
 }
 
 .NavBarFix {
-    height: 70px;
+  height: 70px;
 }
 
 .NavBarFix .LogoMenu img {
-    margin: 8px;
-    width: 85px;
-    transition: all 0.6s ease, border 0.2s ease;
+  margin: 8px;
+  width: 85px;
+  transition: all 0.6s ease, border 0.2s ease;
 }
 
 .NavBarFix .Menu li a {
-    line-height: 70px;
+  line-height: 70px;
 }
 
 .NavBarFix .NavBarBtnMenu {
-    padding: 24px 20px;
+  padding: 24px 20px;
 }
 
 .Menu {
-    float: right;
-    padding-left: 0;
+  float: right;
+  padding-left: 0;
 }
 
 .Menu li {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    float: left;
-    padding-right: 10px;
-    padding-left: 10px;
-    font-weight: bold;
-    font-family: 'SprayPaint';
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  float: left;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-weight: bold;
+  font-family: "SprayPaint";
 }
 
 .Menu li a {
-    color: #444;
-    transition: color 0.6s ease, border 0.2s ease;
+  color: #444;
+  transition: color 0.6s ease, border 0.2s ease;
 }
 
 .NavBarBtnMenu {
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
