@@ -1,9 +1,6 @@
 import React from 'react';
-// import queryString from 'querystring';
-// import Constants from '../config';
-// import isset from './utilities/isset';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage } from "react-intl";
 import { connect } from 'react-redux';
 
 import Loading from './Loading';
