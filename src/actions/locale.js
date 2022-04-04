@@ -35,7 +35,7 @@ export const sendFormAsync = (form) => {
     } else {
       dispatch(isLoading(true));
       await server
-        .post(`${Constants.urlServer}/contact`, { ...form, website: 1 })
+        .post(`${Constants.urlServer}/contact`, { ...form, website: 0 })
         .then((response) => {
           if (response.data.status === "OK") dispatch(setMessange("La consulta se envio con éxito, te responderemos a la brevedad.", "OK"));
 
