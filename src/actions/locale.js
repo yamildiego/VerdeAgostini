@@ -37,14 +37,13 @@ export const sendFormAsync = (form) => {
       await server
         .post(`${Constants.urlServer}/contact`, { ...form, website: 0 })
         .then((response) => {
-          if (response.data.status === "OK") dispatch(setMessange("La consulta se envio con éxito, te responderemos a la brevedad.", "OK"));
+          if (response.data.status === "OK") dispatch(setMessange("contact.form.ok", "OK"));
 
-          if (response.data.status === "ERROR")
-            dispatch(setMessange("Ups ha ocurrido un error en nuestros servidor, contacte al administrador del sistema.", "ERROR"));
+          if (response.data.status === "ERROR") dispatch(setMessange("contact.form.error", "ERROR"));
           dispatch(isLoading(false));
         })
         .catch((error) => {
-          dispatch(setMessange("Ups ha ocurrido un error en nuestros servidor, contacte al administrador del sistema.", "ERROR"));
+          dispatch(setMessange("contact.form.error", "ERROR"));
           dispatch(isLoading(false));
         });
     }

@@ -24,6 +24,8 @@ const lang = {
     "contact.form.email": "Email",
     "contact.form.message": "Message",
     "contact.form.send": "Send",
+    "contact.form.ok": "Your message has been sent successfully.",
+    "contact.form.error": "An unknown error has occurred. Please try again later",
     "aboutus.title": "About us",
     "aboutus.subtitle": " ",
     "aboutus.paragraphone":
@@ -67,6 +69,8 @@ const lang = {
     "contact.form.email": "Correo electrónico",
     "contact.form.message": "Mensaje",
     "contact.form.send": "Enviar",
+    "contact.form.ok": "La consulta se envio con éxito, te responderemos a la brevedad.",
+    "contact.form.error": "Ups ha ocurrido un error en nuestros servidor, contacte al administrador del sistema.",
     "aboutus.title": "¿Quienes somos?",
     "aboutus.subtitle": " ",
     "aboutus.paragraphone":
