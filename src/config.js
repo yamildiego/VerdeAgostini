@@ -1,7 +1,7 @@
 const Constants = {
   urlVisible: "verdeagostini.com.ar",
-  // urlServer: "http://localhost:5000/api/",
-  urlServer: "https://yamildiego.com/server_1/api/",
+  // urlServer: "http://localhost:5000/api",
+  urlServer: "https://postman.yamildiego.com",
   emailAdministrator: "yamildiego@gmail.com",
   number: "3442 603234",
   numberW: "543442603234",
